@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Event 1",
+        "short_description": "This is short.",
+        "full_description": "This is full description.",
+        "image": "https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg"
+    },
+    
+    {
+        "name": "Event 2",
+        "short_description": "This is short.",
+        "full_description": "This is full description.",
+        "image": "https://ggayane.github.io/css-experiments/cards/dark_rider-cover.jpg"
+    }
+]

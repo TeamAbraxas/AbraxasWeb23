@@ -1,0 +1,72 @@
+.soonContainer {
+    height: 100vh;
+}
+
+.soonHeroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.textsoon {
+    font-size: 8rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-family: Neuemachina, sans-serif;
+    margin: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+  
+  
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;    
+  }
+  
+  @keyframes back {
+    100% {
+      background-position: 2000px 0;
+    }
+  }
+
+  /* RESPONSIVENESS GOES HERE */
+@media only screen and (max-width:1000px) {
+  .textsoon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textsoon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+  }
+}
+
+.tempNav {
+  margin-left: 10vw;
+}
+
+@media only screen and (max-width: 350px) {
+  .textsoon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+  }
+}

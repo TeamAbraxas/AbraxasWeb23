@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.teamContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    background-color: black;
+}
+
+.teamHeroContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+    .teamHeroContainer {
+        margin-top: 10vh;
+    }
+}

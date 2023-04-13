@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.contactContainer {
+  background-color: black;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Exo 2', sans-serif;
+
+}
+
+.contactHeroContainer {
+  height: 100vh;
+  scroll-snap-align: center;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactCard {
+  flex: 1;
+  
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+  box-shadow: -15px 17px 17px rgba(10, 10, 10. 0.25);
+
+  height: 90%;
+  width: 80%;
+  inset: 0;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+  background: transparent;
+}
+
+.astronaut {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  animation: animateAstro 2s infinite ease alternate;
+}
+
+@keyframes animateAstro {
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  font-size: 48px;
+  margin-top: 40px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  width: 150%;
+}
+
+.formControl {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  height: 62px;
+  overflow: auto;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.submitBtn {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  height: 48px;
+  background-color: white;
+  margin: 32px;
+}
+
+.submitBtn:hover {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  background: transparent;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+
+.socialIcon {
+  width: 64px;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.socialIcon:hover {
+  animation: animateIcon 1s infinite ease alternate;
+}
+
+@keyframes animateIcon {
+  to {
+    transform: translateY(5px);
+  }
+}
+
+/* RESPONSIVENESS GOES HERE */
+
+@media only screen and (max-width: 1300px) {
+  .contactForm {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .heroContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contactHeroContainer {
+    margin-top: 50px;
+  }
+
+  .right  {
+    display: none;
+  }
+
+  .mainContainer {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .heroContainer {
+    height: 80%;
+  }
+  
+  .contactCard {
+    width: 95%;
+  }
+
+  .formContainer {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+
+  .contactForm {
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+  .formControl, .submitBtn {
+    font-size: 14px;
+  }
+
+  .socialIcon {
+    width: 48px;
+    height: auto;
+  }
+}
