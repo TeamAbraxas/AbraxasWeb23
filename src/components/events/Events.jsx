@@ -60,7 +60,7 @@ const Events = () => {
                     <div className="wrap animate pop">
                         <div className="overlay">
                             <div className="overlay-content animate slide-left delay-2">
-                                <h1 className="animate slide-left pop delay-4">Laser Dart Game</h1>
+                                <h1 className="animate slide-left pop delay-4">Photon Quest</h1>
                             </div>
                             <div className="image-content2 animate slide delay-5"></div>
                             {/* <div className="dotsEvent animate">
